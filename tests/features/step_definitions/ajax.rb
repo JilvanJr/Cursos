@@ -1,0 +1,11 @@
+Quando("clico no botão") do                                                   
+    @ajax = AjaxPage.new
+    @ajax.load
+
+    @ajax.clicar_botao
+end                                                                           
+                                                                                
+Então("verifico se apareceu.") do                                             
+    @ajax.wait_for_message
+    expect(@ajax.message.text).to eql 'Você Clicou no Botão!'
+end                                                                           
