@@ -33,3 +33,8 @@ Capybara.configure do |config|
     config.app_host = CONFIG['url_padrao'] #definindo site default para entrar
     config.default_max_wait_time = 5 #definindo tempo de 5 segundos para aguardar encontrar elemento
 end
+
+# $ git init -- inicia o projeto
+# $ git status
+# $ git remote add origin master https://github.com/JilvanJr/Cursos.git
+# $ git pull origin master
